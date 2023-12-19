@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/leaflet.js" defer></script>
+</head>
+
+<body>
+    <header><a href="index.html"><img class="logo-shop" src="assets/icons/displaydomain (2).png" alt=""></a>
+        <form class="search-bar">
+      <div ><button><img src="assets/icons/zoeken.png" alt=""></button><input type="search" placeholder="zoeken..."></div>
+    </form>
+    <nav>
+      <p class="paginas">
+        <a href="index.html">Home</a> 
+        <a href="shop.html">Shop</a> 
+        <a href="contact.html">Contact</a>
+        <a href="klanten.html">Klanten</a>
+    </p>            
+    </nav></header>
+    <main>
+        <form action="">
+            <legend class="info-gebruiker">
+                <h1 class="hoofdtitel">CONTACT</h1>
+                <h2 class="gegevens">Gegevens</h2>
+                <p>Voor-en achternaam<span class="required">*</span></p>
+                <input type="text" name="" id="" placeholder="voor-en achternaam" required> <br> <br>
+                <p>e-mail<span class="required">*</span></p>
+                <input type="email" placeholder="email">
+            </legend>
+            <legend id="vraag">
+                <h2>VRAAG</h2>
+                <p>Vraag is over<span class="required">*</span></p>
+                <select class="keuze" name="vakken" required>
+                    <option value="keuze">--maak hier een keuze--</option>
+                    <option value="secre">verzending</option>
+                    <option value="IT">product</option>
+                    <option value="stuvo">retour</option>
+                </select> <br> <br>
+
+                <form id="bericht" action="">
+                    <p id="titel">Bericht<span class="required">*</span></p>
+                    <textarea name="bericht" id="textarea" cols="40" rows="10" placeholder="bericht"></textarea>
+                </form> <br> <br>
+
+                <form id="submit" action="">
+                    <button class="verzenden" type="submit">VERZENDEN</button>
+                </form>
+                <p><span class="required">*</span> zijn verplicht in te vullen velden.</p>
+            </legend>
+        </form>
+        <div id="displaymap"></div>
+    </main>
+
+    <aside>
+        <ul class="vragen">
+            <h1>Veel gestelde vragen</h1>
+            <li>Hoeveel kost een terugzending?</li>
+            <p>Als u zich in België bevindt is het op onze kosten.</p>
+            <li>Kan je na 30 dagen nog retourneren?</li>
+            <p>Je kan tot 30 dagen na aankoop retourneren.</p>
+            <li>Welke verzender gebruiken jullie?</li>
+            <p>Wij maken gebruik van Bpost.</p>
+            <li>Kan ik zakelijke bestellingen plaatsen?</li>
+            <p>Ja wij verkopen ook aan bedrijven.</p>
+        </ul>
+    </aside>
+
+    <footer>
+        <section class="footer1">
+            <h2>Displaydomain</h2>
+            <div><img class="locatie-icon" src="assets/icons/locatie.png" alt=""><p>Noorderlaan 1 <br> 2000 - Antwerpen <br> België</p></div>
+            <div><img class="tel-icon" src="assets/icons/tel.png" alt="tel"><p>+32 (0)471 31 64 73</p></div>
+            <div><img class="mail-icon" src="assets/icons/mail (2).png" alt=""><a href="mailto: jefvanlinden.jvl@gmail.com">info@displaydomain.be</a></div>
+        </section>
+        <section class="footer2">
+            <h2>Nieuwsbrief</h2>
+            <p>Blijf op de hoogte van onze promoties en andere deals!</p>
+            <form action="">
+                <input type="email" placeholder="email...">
+                <button type="submit">Aanmelden</button>
+            </form>
+            <article class="sociale-media">
+                <div><a href="https://www.instagram.com/"><img src="assets/icons/instagram.png" alt="instagram"></a></div>
+                <div><a href="https://nl-nl.facebook.com/"><img src="assets/icons/facebook.png" alt="facebook"></a></div>
+                <div><a href="https://twitter.com/?lang=n"><img src="assets/icons/twitter.png" alt="twitter"></a></div>
+            </article>
+        </section>
+    </footer>
+</body>
+
+</html>

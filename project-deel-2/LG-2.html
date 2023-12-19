@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/favorite.js" defer></script>
+    <script src="js/review.js" defer></script>
+    <script src="https://kit.fontawesome.com/e9f5198396.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img class="logo-shop" src="assets/icons/displaydomain (2).png" alt=""></a>
+        <form class="search-bar">
+            <div>
+                <button><img src="assets/icons/zoeken.png" alt=""></button>
+                <input type="search" placeholder="zoeken...">
+            </div>
+        </form>
+        <nav>
+            <p class="paginas">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+                <a href="klanten.html">Klanten</a>
+            </p>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="product-kopen">
+            <article class="foto-product">
+                <img src="assets/images/lg 2.jfif" alt="">
+            </article>
+            <article class="prijs-product">
+                <h1>LG H36363J</h1>
+                <div>
+                    <p class="prijs">249,- <span class="btw">incl. btw</span></p>
+                </div>
+                <p id="btw">levering: enkel reservatie <br> + afhaling in onze winkel</p>
+                <form id="fform" action="">
+                </form>
+            </article>
+        </section>
+
+        <section class="product-beschrijving">
+            <article class="beschrijving">
+                <H2>productbeschrijving</H2>
+                <ul>
+                    <li>FULL HD (1920 x 1080)</li>
+                    <li>27 inch display</li>
+                    <li>120Hz verversingssnelheid</li>
+                </ul>
+                <p>Een AOC-monitor met een grootte van 24 inch en een resolutie van 1080p biedt een helder en scherp beeld op een gemiddeld formaat scherm. Met een verversingssnelheid van 75Hz worden beelden vloeiender weergegeven dan op standaard 60Hz-monitoren, wat vooral gunstig is bij het spelen van games of het bekijken van video's. AOC staat bekend om zijn kwaliteit en betrouwbaarheid, dus je kunt verwachten dat deze monitor een goede beeldkwaliteit en prestaties levert voor dagelijkse taken, entertainment en lichte gaming.</p>
+            </article>
+            <article class="review">
+                <h2>laat een review achter!</h2>
+                <form id="reviewForm">
+                    <textarea id="reviewText" cols="30" rows="10" placeholder="review..."></textarea>
+                    <div><button class="review-knop" type="button" id="saveButton">Opslaan</button></div>
+                </form>
+                <ul id="reviewList"></ul>
+            </article>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <section class="footer1">
+            <h2>Displaydomain</h2>
+            <div><img class="locatie-icon" src="assets/icons/locatie.png" alt=""><p>Noorderlaan 1 <br 5px> 2000 - Antwerpen <br> Belgie</p></div>
+            <div><img class="tel-icon" src="assets/icons/tel.png" alt="tel"><p>+32 (0)471 31 64 73</p></div>
+            <div><img class="mail-icon" src="assets/icons/mail (2).png" alt=""><a href="mailto: jefvanlinden.jvl@gmail.com">info@displaydomain.be</a></div>
+        </section>
+
+        <section class="footer2">
+            <h2>nieuwsbrief</h2>
+            <p>blijf op de hoogte van onze promoties en andere deals!</p>
+            <form action="">
+                <input type="email" placeholder="email...">
+                <button type="submit">Aanmelden</button>
+            </form>
+            <article class="sociale-media">
+                <div><a href="https://www.instagram.com/"><img src="assets/icons/instagram.png" alt="instagram"></a></div>
+                <div><a href="https://nl-nl.facebook.com/"><img src="assets/icons/facebook.png" alt="facebook"></a></div>
+                <div><a href="https://twitter.com/?lang=n"><img src="assets/icons/twitter.png" alt="twitter"></a></div>
+            </article>
+        </section>
+    </footer>
+</body>
+
+</html>
